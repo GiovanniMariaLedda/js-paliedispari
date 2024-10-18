@@ -9,13 +9,9 @@ console.log('JS OK');
 // 3. Devo restituire un valore?
 // 4. Se sì, di che tipo?
 
-// Palidroma
-// Chiedere all’utente di inserire una parola
-// Creare una funzione per capire se la parola inserita è palindroma
-//   SE 
-//     la parola è palindroma print 'Questa parola è palindroma'
-//   ALTRIMENTI 
-//     print 'la parola inserita non è palindroma'
+//* Palidroma
+//* Chiedere all’utente di inserire una parola
+//* Creare una funzione per capire se la parola inserita è palindroma
 
 //! Raccolta dati 
 // creare il prompt per chiedere la parola all'utente;
@@ -38,16 +34,22 @@ function palindroma(insertWord){
     return true;
 }
 
+//! Output
+if(palindroma(insertWord)){
+    console.log(insertWord + ' ->' + " Questa parola è palindroma");
+    window.alert(insertWord + ' ->' + " Questa parola è palindroma");
+  } 
+  else {
+    console.log(insertWord + ' ->' + " la parola inserita non è palindroma");
+    window.alert(insertWord + ' ->' + " la parola inserita non è palindroma");
+  }
 
-
-
-
-// Pari e Dispari
-// L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
-// Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
-// Sommiamo i due numeri
-// Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
-// Dichiariamo chi ha vinto.
+//* Pari e Dispari
+//* L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
+//* Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
+//* Sommiamo i due numeri
+//* Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
+//* Dichiariamo chi ha vinto.
 
 
 //! Raccolta dati 
