@@ -19,14 +19,27 @@ console.log('JS OK');
 
 //! Raccolta dati 
 // creare il prompt per chiedere la parola all'utente;
-const insertWord = prompt("inserisci la parola");
-// creare la funzione ;
-
+// Creare una funzione per capire se la parola inserita è palindroma
+//   SE 
+//     la parola è palindroma print 'Questa parola è palindroma'
+//   ALTRIMENTI 
+//     print 'la parola inserita non è palindroma'
 
 //! Svolgimento
+// creare il prompt per chiedere la parola all'utente;
+const insertWord = prompt("inserisci la parola"); 
+// Creare una funzione per capire se la parola inserita è palindroma;
+function palindroma(insertWord){    
+    for(let i = 0; i < insertWord.length / 2; i++){     
+      if(insertWord[i] !== insertWord[insertWord.length - i - 1]){
+            return false;
+        }
+    }
+    return true;
+}
 
 
-//! Output
+
 
 
 // Pari e Dispari
